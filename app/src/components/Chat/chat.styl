@@ -1,0 +1,42 @@
+.chat
+  position: absolute;
+  bottom: 0;
+  right: 1rem
+  width: 400px
+  background-color: white
+  border: 1px solid grey
+  // background-color: #ccc
+  &-messages
+    overflow: scroll
+    max-height: 400px
+    min-height: 400px
+    padding-bottom: 2rem
+
+  &-message
+    padding-left: .5rem
+    margin-top: .5rem
+    &-content
+      flex-wrap: nowrap
+      height: 27px
+      display: flex
+      align-items: center
+      padding: .25rem .5rem
+      & .message-content
+        display: flex
+        align-items: center
+
+    &-author
+      padding: .25rem .5rem
+      font-weight: bold
+  &-title
+    text-align:center
+    border-bottom: 1px solid grey
+    padding: .5rem
+  &-input
+    width: 100%
+    position: absolute
+    bottom: 0
+    color: orange
+    & textarea
+      width: 100%
+      padding: .5rem

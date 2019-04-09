@@ -1,0 +1,35 @@
+.channel-details-item
+  border-bottom: 1px solid #ccc
+  padding: 1rem 0
+  padding-right: 0
+  &-name
+    &-icon
+      padding-left: 1rem
+    &-username
+      padding-left: .2rem
+    padding-left: .2rem
+    cursor: pointer
+  &-content
+    max-height: 0
+    overflow: hidden
+    position: relative
+  &--open
+    animation: 0.5s forwards channel-details-item--open
+  &--close
+    animation: 0.2s forwards channel-details-item--close
+
+
+@keyframes channel-details-item--open
+  from
+    max-height: 0
+  to
+    margin-top: 1rem
+    max-height: 600px
+    overflow: auto
+
+@keyframes channel-details-item--close
+  from
+    max-height: 600px
+  to
+    max-height: 0
+

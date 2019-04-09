@@ -1,0 +1,33 @@
+.reaction
+  position: relative
+  align-items: center
+  width: 38px
+  height: 32px
+  display: flex
+  background-color: rgba(#05fbe2, 0.15)
+  border-radius: 5px
+  border: 1px solid grey
+  cursor:pointer
+  & span
+    margin: auto
+  & .emoji-mart-emoji
+    position: relative
+    top: 2px
+  &-count
+    padding-left: .1rem
+  &:hover &-users-list
+    visibility: visible
+  &-users-list
+    position: relative
+    top: -2rem
+    left: 2rem
+    visibility: hidden
+    padding: .5rem
+    transform: translateX(-50%)
+    margin-left: 1rem
+    z-index: 2
+    min-width: 300px
+    text-align:center
+    background-color: rgba(0,0,0,1)
+    color: white
+

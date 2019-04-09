@@ -1,0 +1,56 @@
+#team-list-panel
+  max-height: 100vh
+  position: absolute
+  width: 50px
+
+  @media screen and (min-width: 1200px)
+    position: relative
+  &--toggle
+    position: absolute
+    left: 100%
+    top: 50%
+    padding-bottom: .4rem
+    font-size: 2rem
+    transform: translateY(-50%)
+    color: lightgrey
+    background-color: #261c25
+    border-radius: 0 5px 5px 0
+#team-list
+  width: 50px
+  position: relative
+  background-color: #261c25
+  height: 100vh
+  &::-webkit-scrollbar
+    width: 3px
+  display: flex
+  flex-direction: column
+  overflow-y: auto
+.team-list-panel--close
+  @media screen and (max-width: 1200px)
+    animation: 1s forwards team-list-slide-left
+.team-list-panel--open
+  @media screen and (max-width: 1200px)
+    animation: 1s forwards team-list-slide-right
+
+.team-icon
+  margin: 1em auto
+  display: block
+#search-link
+  width: 100%
+  text-align: center
+  color: white
+  & svg
+    font-size: 1.7rem
+
+
+@keyframes team-list-slide-left
+  from
+    left: 0
+  to
+    left: -50px
+@keyframes team-list-slide-right
+  from
+    left: -50px
+  to
+    left: 0
+
